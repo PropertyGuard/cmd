@@ -147,7 +147,6 @@ func Build(c *model.CommandConfig, paths *model.RevelContainer) (_ *App, err err
 		if len(c.BuildFlags) == 0 {
 			flags = []string{
 				"build",
-				"-i",
 				"-ldflags", versionLinkerFlags,
 				"-tags", buildTags,
 				"-o", binName}
